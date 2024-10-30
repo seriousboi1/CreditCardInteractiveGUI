@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(219, 229, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#container {
+    width: 25vw;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2vw;
+}
+
+#card {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    width: 18vw;
+    height: 23vh;
+    border-radius: 1vw;
+    margin-left: 3.5vw;
+    margin-top: -5.5vw;
+}
+
+#card.flipped {
+    transform: rotateY(180deg);
+}
+
+#front_card {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-image: url("bg_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#back_card {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-image: url("flipped_bg_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#chip {
+    position: absolute;
+    width: 2.7vw;
+    height: auto;
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+#credit_num {
+    position: absolute;
+    margin-left: 1vw;
+    margin-top: 6vw;
+    color: white;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    transition: all 1s ease-in;
+}
+
+#name_label {
+    color: rgb(121, 121, 146);
+    font-size: 0.6vw; 
+    position: absolute;
+    margin-top: 17vh;
+    margin-left: 2vw;
+}
+
+#name {
+    position: absolute;
+    margin-top: 19vh;
+    margin-left: 1vw;
+    color: white;
+}
+
+#date_label {
+    color: rgb(121, 121, 146);
+    font-size: 0.6vw; 
+    position: absolute;
+    margin-left: 14.6vw;
+    margin-top: 17vh;
+}
+
+#date {
+    position: absolute;
+    margin-left: 14.3vw;
+    margin-top: 19vh;
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    width: 3.5vw;
+    margin-left: 14vw;
+    margin-top: 0vw;
+}
+
+.input_title {
+    position: absolute;
+    font-size: 0.7vw;
+    letter-spacing: -0.05vw;
+    color: rgb(36, 35, 48);
+}
+
+
+#cred_input_title { margin-top: 4vh; margin-left: 1.5vw; }
+#cred_input {
+    width: 22vw;
+    height: 5vh;
+    border-radius: 0.3vw;
+    border: 0.07vw solid rgb(180, 180, 180);
+    font-size: 0.9vw;
+    color: rgb(61, 64, 78);
+    margin-left: 1.5vw;
+    margin-top: 6vh;
+}
+
+
+#name_input_title { margin-top: 15vh; margin-left: -22vw; }
+#name_input {
+    width: 22vw;
+    height: 5vh;
+    border-radius: 0.3vw;
+    border: 0.07vw solid rgb(180, 180, 180);
+    font-size: 0.9vw;
+    color: rgb(61, 64, 78);
+    margin-left: 1.5vw;
+    margin-top: 6vh;
+}
+
+
+#date_input_title { margin-top: 15vh; margin-left: -22vw; }
+#month_input {
+    position: absolute;
+    border-radius: 0.3vw;
+    border: 0.07vw solid rgb(180, 180, 180);
+    margin-top: 17vh;
+    margin-left: -22vw;
+    width: 6.5vw;
+    height: 5vh;
+    font-size: 0.8vw;
+}
+#year_input {
+    position: absolute;
+    border-radius: 0.3vw;
+    border: 0.07vw solid rgb(180, 180, 180);
+    margin-top: 17vh;
+    margin-left: -15vw;
+    width: 6.5vw;
+    height: 5vh;
+    font-size: 0.8vw;
+}
+
+
+#cvv_input_title { margin-top: 15vh; margin-left: -6.5vw; }
+#cvv_input {
+    border-radius: 0.3vw;
+    border: 0.07vw solid rgb(180, 180, 180);
+    width: 6.5vw;
+    height: 5vh;
+    margin-left: 17vw;
+    margin-top: 6vh;
+}
+
+
+/*
+    background-color:hsla(159,47%,59%,1);
+    background-image:
+        radial-gradient(at 23% 87%, hsla(155,47%,53%,1) 0px, transparent 50%),
+        radial-gradient(at 46% 47%, hsla(161,52%,49%,1) 0px, transparent 50%),
+        radial-gradient(at 88% 86%, hsla(167,48%,47%,1) 0px, transparent 50%),
+        radial-gradient(at 14% 46%, hsla(145,62%,56%,1) 0px, transparent 50%);
+} */
+
+#black_strip {
+    width: 18vw;
+    height: 4vh;
+    background-color: #111111;
+    margin-top: 2vh;
+}
+
+#white_strip {
+    width: 16.5vw;
+    height: 4vh;
+    background-color: #f1f1f1;
+    margin-top: 5vh;
+    margin-left: 0.75vw;
+    border-radius: 0.2vw;
+}
+
+#cvv_label {
+    color: rgb(121, 121, 146);
+    font-size: 0.6vw; 
+    position: absolute;
+    margin-left: 15.5vw;
+    margin-top: 3vh;
+}
+
+#cvv {
+    position: absolute;
+    direction: rtl;
+    margin-left: 14.5vw;
+    margin-top: 0.7vh;
+}

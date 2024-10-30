@@ -1,0 +1,64 @@
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="card" onclick="this.classList.toggle('flipped')">
+            <div id="front_card">
+                <img id="chip" src="images/silver_chip.png">
+                <label id="credit_num"></label>
+                <label id=""></label> 
+                <img id="logo" src="images/transparent.png">
+                
+                <label id="name_label">Card Holder</label>
+                <label id="name">Name Namey</label>
+
+                <label id="date_label">Expires</label> 
+                <label id="date">MM/YY</label>
+            </div>
+            <div id="back_card">
+                <div id="black_strip"></div>
+
+                <label class="input_title" id="cvv_label">CVV</label>
+                <div id="white_strip">
+                    <label id="cvv" dir="rtl"></label>
+                </div>
+            </div> 
+        </div>
+        
+        <label class="input_title" id="cred_input_title">Card Number</label>
+        <input type="text" id="cred_input" maxlength="16">
+
+        <label class="input_title" id="name_input_title">Card Name</label>
+        <input type="text" id="name_input">
+
+        <label class="input_title" id="date_input_title">Expiration Date</label>
+        <select id="month_input">
+            <option value="" disabled selected>Month</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+        <select id="year_input">
+            <option value="" disabled selected>Year</option>
+        </select>
+
+        <label class="input_title" id="cvv_input_title">CVV</label>
+        <input type="password" id="cvv_input" maxlength="3">
+
+    </div>
+    <script src="main.js"></script>
+</body>
