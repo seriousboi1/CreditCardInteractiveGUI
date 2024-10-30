@@ -38,10 +38,10 @@ cred_num_input.addEventListener('input', () => {
     const cardType = getCardType(inputVal);
     if (cardType) {
         console.log("Detected card type:", cardType);
-        logo.src = `logos/${cardType.toLowerCase()}.png`;
+        logo.src = `${cardType.toLowerCase()}.png`;
     } else {
         console.log("No card type detected.");
-        logo.src = "images/transparent.png";
+        logo.src = "transparent.png";
     }
 
     let maskedValue = inputVal
@@ -73,7 +73,6 @@ for (let i = 0; i <= futureYears; i++) {
     yearSelect.appendChild(option);
 }
 
-
 const name_input = document.getElementById('name_input');
 const name_label = document.getElementById('name');
 name_input.addEventListener('input', () => {
@@ -84,11 +83,6 @@ name_input.addEventListener('input', () => {
         name_label.textContent = name_input.value;
     }
 });
-
-
-
-
-
 
 const month_input = document.getElementById('month_input');
 const year_input = document.getElementById('year_input');
