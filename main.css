@@ -183,16 +183,6 @@ body {
     margin-top: 6vh;
 }
 
-
-/*
-    background-color:hsla(159,47%,59%,1);
-    background-image:
-        radial-gradient(at 23% 87%, hsla(155,47%,53%,1) 0px, transparent 50%),
-        radial-gradient(at 46% 47%, hsla(161,52%,49%,1) 0px, transparent 50%),
-        radial-gradient(at 88% 86%, hsla(167,48%,47%,1) 0px, transparent 50%),
-        radial-gradient(at 14% 46%, hsla(145,62%,56%,1) 0px, transparent 50%);
-} */
-
 #black_strip {
     width: 18vw;
     height: 4vh;
